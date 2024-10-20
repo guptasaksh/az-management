@@ -1,14 +1,15 @@
-variable "config_variable" {
-  type    = string
-  default = "default_value"
+variable "location" {
+  type        = string
+  default     = "UK South"
+  description = "default resources location"
 }
-
-variable "pipeline_variable" {
-  type    = string
-  default = "default_value"
+ 
+variable "resource_group_name" {
+  type        = string
+  description = "resource group name"
 }
-
-variable "environment_variable" {
-  type    = string
-  default = "default_value"
+ 
+variable "storage_account_name" {
+  type        = string
+  description = "storage account name"
 }
