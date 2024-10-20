@@ -1,3 +1,3 @@
-output "out" {
-  value = var.in
-}
+# output "out" {
+#   value = var.in
+# }
