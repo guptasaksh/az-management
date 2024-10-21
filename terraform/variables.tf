@@ -1,14 +1,20 @@
-variable "config_variable" {
+variable "location" {
+  description = "Location of the resources"
   type    = string
   default = "default_value"
 }
 
-variable "pipeline_variable" {
+variable "resource_group_name" {
   type    = string
   default = "default_value"
 }
 
-variable "environment_variable" {
+variable "enable_telemetry" {
+  type    = string
+  default = "default_value"
+}
+
+variable "loganalyticsnm" {
   type    = string
   default = "default_value"
 }

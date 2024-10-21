@@ -1,11 +1,6 @@
 locals {
-  these = [
-    "Hello, World!",
-    "Goodbye, World!"
-  ]
+  location = "westwestus2"
+  resource_group_name = "rg-mg-prod-01"
+  enable_telemetry = "true" 
 }
-module "this" {
-  source   = "../modules/this"
-  for_each = { for k, v in local.these : k => v }
-  in       = each.value
-}
+
